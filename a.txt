@@ -4,3 +4,6 @@ second test
 this is second commit
 third commit
 third test
+fourth test
+fourth commit
+this is test!
