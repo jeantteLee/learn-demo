@@ -50,13 +50,16 @@ public class FindSubsequences {
         while (i != 0) {
             Integer idx = map.get(i & (-i));
             list.add(stack.get(idx));
-
-            i = i / (2 * (i & (-i)));
+            i = i - (i & (-i) );
         }
         return list;
     }
 
     public static void main(String[] args) {
+        int i = 7;
+        i = i - (i & (-i));
+        System.out.println(i);
+
         System.out.println(findSubsequences(new int[]{1, 2, 3, 4}));
     }
 }
